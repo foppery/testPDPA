@@ -64,3 +64,14 @@ html *
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
     background-color: #154472 !important;
 }
+
+/* Date picket Adapts a floating label for use with a left-handed input group icon */
+.form-floating{
+margin-bottom: 0rem !important;
+}
+.form-floating > .bi-calendar-date + .datepicker_input + label {
+	
+	padding-left: 3.5rem;
+	z-index: 3;
+  }
+
