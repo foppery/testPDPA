@@ -44,10 +44,12 @@
 <body class="bg-light">
     <div class="container">
         <main>
-          
-            <div class="py-5 text-center">
-                <h4>การยืนยันตัวตน</h4>
-            </div>
+<div class="row py-5 text-center">
+  <div class="col-4"><img src="assets/img/back.png"></div>
+  <div class="col-4"><h4>การยืนยันตัวตน</div>
+  <div class="col-4"><img src="assets/img/close.png"></div>
+</div>
+
             <!-- progressbar -->
             <div>
                 <ul id="progressbar">
@@ -94,7 +96,7 @@
             
                           <div class="col-md-4">
                             <label for="zip" class="form-label">ชื่อ</label>
-                            <input type="text" class="form-control" id="zip" placeholder="" required>
+                            <input type="text" class="form-control" id="zip" placeholder="เมืองไทย" required>
                             <div class="invalid-feedback">
                               กรุณาใส่ชื่อ.
                             </div>
@@ -102,17 +104,17 @@
             
                           <div class="col-md-5">
                             <label for="zip" class="form-label">ชื่อกลาง</label>
-                            <input type="text" class="form-control" id="zip" placeholder="" required>
+                            <input type="text" class="form-control" id="zip" placeholder="ประกันภัย" required>
                                 
                             </div>
                             <div class="col-sm-6">
                                 <label for="firstName" class="form-label">นามสกุล</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                <input type="text" class="form-control" id="firstName" placeholder="ยิ้มได้เมื่อภัยมา" value="" required>
                                 
                               </div>
                               <div class="col-sm-6">
                                 <label for="lastName" class="form-label">วันเดือนปีเกิด</label>
-                                <input type="text" class="datepicker_input form-control" id="datepicker1" placeholder="DD/MM/YYYY" value="" required>
+                                <input type="text" class="datepicker_input form-control" id="datepicker1" placeholder="วัน/เดือน/ปี" value="" required>
                                 <div class="invalid-feedback">
                                   กรุณาใส่วันเดือนปีเกิด.
                                 </div>

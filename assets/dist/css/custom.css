@@ -1,42 +1,42 @@
-html *
-{
-
-    font-family: 'sarabun', sans-serif;
-    
+html * {
+  font-family: "sarabun", sans-serif;
 }
-
-
+.py-5 {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
 
 /*progressbar*/
 #progressbar {
-	text-align: center;
-	margin-bottom: 65px;
-	overflow: hidden;
-	/*CSS counters to number the steps*/
-	counter-reset: step;
-	padding: 0;
+  text-align: center;
+  margin-bottom: 65px;
+  overflow: hidden;
+  /*CSS counters to number the steps*/
+  counter-reset: step;
+  padding: 0;
 }
 #progressbar li {
-	list-style-type: none;
-	color: rgb(5, 21, 90);
-	text-transform: uppercase;
-	font-size: 14px;
-	width: 25%;
-	float: left;
-	position: relative;
+  list-style-type: none;
+  color: rgb(5, 21, 90);
+  text-transform: uppercase;
+  font-size: 14px;
+  width: 25%;
+  float: left;
+  position: relative;
+}
+#progressbar img {
+	margin-bottom: 0.4rem;
 }
 /* button*/
 .btn-primary {
-    background-color: #154472 !important;
+  background-color: #154472 !important;
 }
 
 /* Date picket Adapts a floating label for use with a left-handed input group icon */
-.form-floating{
-margin-bottom: 0rem !important;
+.form-floating {
+  margin-bottom: 0rem !important;
 }
 .form-floating > .bi-calendar-date + .datepicker_input + label {
-	
-	padding-left: 3.5rem;
-	z-index: 3;
-  }
-
+  padding-left: 3.5rem;
+  z-index: 3;
+}
