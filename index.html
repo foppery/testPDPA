@@ -38,8 +38,6 @@
     <!-- Custom styles -->
     <link rel="stylesheet" href="assets/dist/css/custom.css">
     <link href="form-validation.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker-bs4.min.css">
-   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css'>
 </head>
 
 <body class="bg-light">
@@ -51,9 +49,17 @@
             <!-- progressbar -->
             <div>
                 <ul id="progressbar">
-                    <li class="active">เงื่อนไขข้อตกลง</li>
-                    <li>ยืนยันตัวตน</li>
-                    <li>กรอกข้อมูลเพิ่มเติม</li>
+                    <li>
+                      <img src="assets/img/step1.png">
+                      <br>เงื่อนไข<br>ข้อตกลง</li>
+                    <li>
+                      <img src="assets/img/step2.png">
+                      <br>ถ่ายรูปบัตร<br>
+                    ประชาชน</li>
+                    <li> <img src="assets/img/step3.png">
+                      <br>กรอกข้อมูล<br>เพิ่มเติม</li>
+                      <li> <img src="assets/img/step4.png">
+                        <br>ถ่ายรูปใบหน้า</li>
                 </ul>
             </div>
             <div class="row g-5"></div>
@@ -103,15 +109,13 @@
                                 
                               </div>
                 
-                            <div class="col-sm-6">
+                              <div class="col-sm-6">
                                 <label for="lastName" class="form-label">วันเดือนปีเกิด</label>
-                                <input type="text" class="datepicker_input form-control" id="datepicker1" placeholder="DD/MM/YYYY" value="" required>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
                                 <div class="invalid-feedback">
                                   กรุณาใส่วันเดือนปีเกิด.
                                 </div>
-
                               </div>
-                            
                               <div class="col-12">
                                 <label for="email" class="form-label">อีเมล์ <span class="text-muted">(Email)</span></label>
                                 <input type="email" class="form-control" id="email" placeholder="you@example.com">
@@ -146,9 +150,7 @@
 
 
 
-<!-- partial -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/js/bootstrap.min.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js'></script>
-<script src="datepicker-full.js"></script>
+
 </body>
+
 </html>
