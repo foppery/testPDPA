@@ -11,6 +11,8 @@ overflow-x: hidden;
   padding-bottom: 2rem !important;
 }
 
+
+
 /*Typography*/
 h1,h2,h3,h4,h5,h6 {
 	font-style: normal;
@@ -19,6 +21,22 @@ h1,h2,h3,h4,h5,h6 {
  
   strong {
 	font-weight: 600;
+  }
+  /**/
+  ul {
+	list-style-type: none;
+	margin-left: 2.5em;
+	padding-left: 0;
+  }
+  ul>li {
+	position: relative;
+  }
+  span {
+	left: -2em;
+	position: absolute;
+	text-align: center;
+	width: 2em;
+	line-height: inherit;
   }
 /*overflow*/
 .overflow-step2 {
