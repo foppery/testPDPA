@@ -1,10 +1,37 @@
-html * {
-  font-family: "sarabun", sans-serif;
+/*body*/
+body {
+font-family: "sarabun", sans-serif;
+font-style: normal;
+	font-weight: 300;
+overflow-x: hidden;
 }
+
 .py-5 {
   padding-top: 2rem !important;
   padding-bottom: 2rem !important;
 }
+
+/*Typography*/
+h1,h2,h3,h4,h5,h6 {
+	font-style: normal;
+	font-weight: 300;
+  }
+ 
+  strong {
+	font-weight: 600;
+  }
+/*overflow*/
+.overflow-step2 {
+  width: auto;
+  height: 300px;
+  overflow: auto;
+}
+.overflow-step3 {
+	width: auto;
+	height: 50px;
+	overflow: auto;
+  }
+
 
 /*progressbar*/
 #progressbar {
@@ -27,10 +54,14 @@ html * {
 #progressbar img {
 	margin-bottom: 0.4rem;
 }
+/*-----*/
+
+
 /* button*/
 .btn-primary {
   background-color: #154472 !important;
 }
+
 
 /* Date picket Adapts a floating label for use with a left-handed input group icon */
 .form-floating {
