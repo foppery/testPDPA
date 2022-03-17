@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.84.0">
+  <title>Data Subject Request sysytem</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100;300;600&display=swap" rel="stylesheet">
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="assets/dist/css/custom.css">
+  <link href="form-validation.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker-bs4.min.css">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css'>
+
+
+<body class="bg-light">
+  <div class="container">
+    <main>
+      <div class="row py-5 text-center">
+        <div class="col-4"></div>
+        <div class="col-4">
+          <h4>การยืนยันตัวตน
+        </div>
+        <div class="col-4"></div>
+      </div>
+<br>
+<br>
+      <div class="row g-5"></div>
+      <div class="col-md-12 col-lg-12">
+      
+        <form class="needs-validation shadow-lg p-3 mb-5 bg-white rounded" novalidate
+          style="background-color: #ffffff; padding: 10px;">
+          <div class="row g-3">
+            <div class="col-6">
+              <h5><strong>ข้อมูลทั่วไป</strong></h5>
+            </div>
+            <div class="col-6" style="text-align: right;"><img src="assets/img/edit-icon.png"></div>
+            <hr>
+
+            <div class="col-12">
+              <label for="address" class="form-label">ชื่อนามสกุล</label>
+              <input type="text" class="form-control" id="address" placeholder="นางสาวเชื่อแป้ง เมืองไทย ประกันภัย"
+                aria-label="Disabled input example" disabled>
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label">หมายเลขประจำตัวบัตรประชาชน</label>
+              <input type="text" class="form-control" id="address" placeholder="3-88-00-8989898-33-9"
+                aria-label="Disabled input example" disabled>
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+            <div class="col-12">
+              <label for="address" class="form-label">วัน/เดือน/ปี เกิด ในรูปแบบ พ.ศ.</label>
+              <input type="text" class="form-control" id="address" placeholder="31 มีนาคม 2538"
+                aria-label="Disabled input example" disabled>
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+            <div class="col-12">
+              <label for="address" class="form-label">อีเมล (Email)</label>
+              <input type="text" class="form-control" id="address" placeholder="Believeinpang@muangthaiinsurance.com"
+                aria-label="Disabled input example" disabled>
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+            <div class="col-12">
+              <label for="address" class="form-label">หมายเลขโทรศัพท์</label>
+              <input type="text" class="form-control" id="address" placeholder="099-999-9999"
+                aria-label="Disabled input example" disabled>
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+            <div class="col-12">
+              <label for="address" class="form-label">ที่อยู่ปัจจุบัน</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                placeholder="252 ถ.รัชดาภิเษก แขวงห้วยขวาง เขตห้วยขวาง กรุงเทพมหานคร 10310"
+                aria-label="Disabled input example" disabled></textarea>
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+
+          </div>
+          <hr class="my-4">
+
+
+        </form>
+        <button class="w-100 btn btn-primary btn-lg" type="submit">ยืนยันและดำเนินการต่อ</button>
+      </div>
+    </main>
+    <footer class="my-2 pt-3 text-muted text-center text-small">
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#"><img src="assets/img/mti.png"></a></li>
+        <li class="list-inline-item">I</li>
+        <li class="list-inline-item">ระบบการยืนยันตัวตน (KYC)</li>
+      </ul>
+    </footer>
+  </div>
+
+
+
+
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/js/bootstrap.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js'></script>
+  <script src="datepicker-full.js"></script>
+</body>
+
+</html>

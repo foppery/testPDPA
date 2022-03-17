@@ -91,7 +91,72 @@
 
           </div>
           <hr class="my-4">
+         <div class="row g-3">
+          <div class="col-12">
+            <label for="address" class="form-label">ที่อยู่ (บ้านเลขที่, หมู่, ตรอกซอย, ถนน)</label>
+            <input type="text" class="form-control" id="address" placeholder="3-88-00-8989898-33-9" required>
+            <div class="invalid-feedback">
+              Please enter your shipping address.
+            </div>
+          </div>
 
+          <div class="col-md-6">
+            <label for="country" class="form-label">จังหวัด</label>
+            <select class="form-select" id="country" required>
+              <option value="">เลือกจังหวัด</option>
+              <option>กรุงเทพมาหนคร</option>
+              <option>นนทบุรี</option>
+              <option>สมุทรปราการ</option>
+             
+            </select>
+            <div class="invalid-feedback">
+              กรุณาเลือกคำนำหน้า.
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="zip" class="form-label">เขต/อำเภอ</label>
+            <select class="form-select" id="country" required>
+              <option value="">เลือกเขต/อำเภอ</option>
+              <option>ลาดพร้าว</option>
+              <option>ห้วยขวาง</option>
+              <option>บางกะปิ</option>
+             
+            </select>
+            <div class="invalid-feedback">
+              กรุณาใส่ชื่อ.
+            </div>
+          </div>
+          
+          <div class="col-md-9">
+            <label for="zip" class="form-label">แขวง/ตำบล</label>
+            <select class="form-select" id="country" required>
+              <option value="">เลือกแขวง/ตำบล</option>
+              <option>ลาดพร้าว</option>
+              <option>ห้วยขวาง</option>
+              <option>บางกะปิ</option>
+             
+            </select>
+            <div class="invalid-feedback">
+              กรุณาใส่ชื่อ.
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label for="zip" class="form-label">รหัสไปรษณีย์</label>
+            <select class="form-select" id="country" required>
+              <option value="">เลือกรหัสไปรษณีย์</option>
+              <option>10230</option>
+              <option>13000</option>
+              <option>12120</option>
+             
+            </select>
+            <div class="invalid-feedback">
+              กรุณาใส่ชื่อ.
+            </div>
+          </div>
+          
+        </div>
+        <hr class="my-4">
           <button class="w-100 btn btn-primary btn-lg" type="submit">ยืนยันและดำเนินการต่อ</button>
         </form>
       </div>
