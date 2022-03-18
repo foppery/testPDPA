@@ -18,23 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100;300;600&display=swap" rel="stylesheet">
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-  </style>
-
-
+ 
   <!-- Custom styles -->
   <link rel="stylesheet" href="assets/dist/css/custom.css">
   <link href="form-validation.css" rel="stylesheet">
@@ -74,20 +58,20 @@
       </div>
       <div class="row g-5"></div>
       <div class="col-md-12 col-lg-12">
-        <h5 class="mb-" style="margin-bottom: 20px;">ข้อมูลทั่วไป</h5>
+        <h5 class="mb-5" style="margin-bottom: 20px;"><strong>ข้อมูลทั่วไป</strong></h5>
         <form class="needs-validation" novalidate>
           <div class="row g-3">
             <div class="col-12">
-              <label for="address" class="form-label">หมายเลขประจำตัวบัตรประชาชน</label>
-              <input type="text" class="form-control" id="address" placeholder="3-88-00-8989898-33-9" required>
+              <label for="id-card" class="form-label">หมายเลขประจำตัวบัตรประชาชน</label>
+              <input type="text" class="form-control" id="id-card" placeholder="3-88-00-8989898-33-9" required>
               <div class="invalid-feedback">
-                Please enter your shipping address.
+               กรุณากรอกหมายเลขบัตรประจำตัวประชาชนที่ถูกต้อง
               </div>
             </div>
 
             <div class="col-md-3">
-              <label for="country" class="form-label">คำนำหน้าชื่อ</label>
-              <select class="form-select" id="country" required>
+              <label for="title-name" class="form-label">คำนำหน้าชื่อ</label>
+              <select class="form-select" id="title-name" required>
                 <option value="">เลือกคำนำหน้า...</option>
                 <option>ด.ช.</option>
                 <option>ด.ญ.</option>
@@ -96,21 +80,21 @@
                 <option>นางสาว</option>
               </select>
               <div class="invalid-feedback">
-                กรุณาเลือกคำนำหน้า.
+               ไม่สามารถแสดงข้อมูลที่ถูฏต้อง
               </div>
             </div>
 
             <div class="col-md-4">
-              <label for="zip" class="form-label">ชื่อ</label>
-              <input type="text" class="form-control" id="zip" placeholder="เมืองไทย" required>
+              <label for="name" class="form-label">ชื่อ</label>
+              <input type="text" class="form-control" id="name" placeholder="เมืองไทย" required>
               <div class="invalid-feedback">
-                กรุณาใส่ชื่อ.
+                กรุณาใส่ชื่อ
               </div>
             </div>
 
             <div class="col-md-5">
-              <label for="zip" class="form-label">ชื่อกลาง</label>
-              <input type="text" class="form-control" id="zip" placeholder="ประกันภัย" required>
+              <label for="middle-name" class="form-label">ชื่อกลาง</label>
+              <input type="text" class="form-control" id="middle-name" placeholder="ประกันภัย" required>
 
             </div>
             <div class="col-sm-6">
@@ -135,8 +119,8 @@
               </div>
             </div>
             <div class="col-12">
-              <label for="address" class="form-label">หมายเลขโทรศัพท์</label>
-              <input type="text" class="form-control" id="address" placeholder="099-999-9999" required>
+              <label for="telephone" class="form-label">หมายเลขโทรศัพท์</label>
+              <input type="text" class="form-control" id="telephone" placeholder="099-999-9999" required>
               <div class="invalid-feedback">
                 Please enter your shipping address.
               </div>
