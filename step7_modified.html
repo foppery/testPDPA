@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.84.0">
+  <title>Data Subject Request sysytem</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100;300;600&display=swap" rel="stylesheet">
+ 
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="assets/dist/css/custom.css">
+  <link href="form-validation.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker-bs4.min.css">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css'>
+
+<body class="bg-light">
+  <div class="container">
+    <main>
+      <div class="row py-5 text-center">
+        <div class="col-4"><img src="assets/img/back.png"></div>
+        <div class="col-4">
+          <h4>การยืนยันตัวตน
+        </div>
+        <div class="col-4"><img src="assets/img/close.png"></div>
+      </div>
+
+      <!-- progressbar -->
+      <div>
+        <ul id="progressbar">
+          <li>
+            <img src="assets/img/step1.png">
+            <br>เงื่อนไข<br>ข้อตกลง
+          </li>
+          <li>
+            <img src="assets/img/step2.png">
+            <br>ถ่ายรูปบัตร<br>
+            ประชาชน
+          </li>
+          <li> <img src="assets/img/step3.png">
+            <br>กรอกข้อมูล<br>เพิ่มเติม
+          </li>
+          <li> <img src="assets/img/step4.png">
+            <br>ถ่ายรูปใบหน้า
+          </li>
+        </ul>
+      </div>
+      <div class="row g-5"></div>
+      <div class="col-md-12 col-lg-12">
+        <h5 class="mb-5" style="margin-bottom: 20px;"><strong>ข้อมูลทั่วไป</strong></h5>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-12">
+              <label for="id-card" class="form-label">หมายเลขประจำตัวบัตรประชาชน</label>
+              <input type="text" class="form-control" id="id-card" placeholder="3-88-00-8989898-33-9" required>
+              <div class="invalid-feedback">
+               กรุณากรอกหมายเลขบัตรประจำตัวประชาชนที่ถูกต้อง
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="title-name" class="form-label">คำนำหน้าชื่อ</label>
+              <select class="form-select" id="title-name" required>
+                <option value="">เลือกคำนำหน้า...</option>
+                <option>ด.ช.</option>
+                <option>ด.ญ.</option>
+                <option>นาย</option>
+                <option>นาง</option>
+                <option>นางสาว</option>
+              </select>
+              <div class="invalid-feedback">
+               ไม่สามารถแสดงข้อมูลที่ถูฏต้อง
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <label for="name" class="form-label">ชื่อ</label>
+              <input type="text" class="form-control" id="name" placeholder="เมืองไทย" required>
+              <div class="invalid-feedback">
+                กรุณาใส่ชื่อ
+              </div>
+            </div>
+
+            <div class="col-md-5">
+              <label for="middle-name" class="form-label">ชื่อกลาง</label>
+              <input type="text" class="form-control" id="middle-name" placeholder="ประกันภัย" required>
+
+            </div>
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">นามสกุล</label>
+              <input type="text" class="form-control" id="firstName" placeholder="ยิ้มได้เมื่อภัยมา" value="" required>
+
+            </div>
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">วันเดือนปีเกิด</label>
+              <input type="text" class="datepicker_input form-control" id="datepicker1" placeholder="วัน/เดือน/ปี" value="" required>
+              <div class="invalid-feedback">
+                กรุณาใส่วันเดือนปีเกิด.
+              </div>
+
+            </div>
+
+			<div class="col-sm-6">
+              <label for="telephone" class="form-label">หมายเลขโทรศัพท์</label>
+              <input type="text" class="form-control" id="telephone" placeholder="099-999-9999" required>
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+            
+			<div class="col-sm-6">
+              <label for="policyNo" class="form-label">เลขที่กรมธรรม์</label>
+              <input type="text" class="form-control" id="policyNo" placeholder="M1234567" required>
+            </div>            
+
+			<div class="col-12">
+              <label for="email" class="form-label">อีเมล์</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+
+          </div>		 		  
+		
+		<br/>
+		  <div class="captcha" align="center">
+              CAPTCHA Here!!!
+           </div>
+		
+          <hr class="my-4">
+          <button class="w-100 btn btn-primary btn-lg" type="submit">ยืนยันและดำเนินการต่อ</button>
+        </form>
+      </div>
+    </main>
+    <footer class="my-2 pt-3 text-muted text-center text-small">
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#"><img src="assets/img/mti.png"></a></li>
+        <li class="list-inline-item">I</li>
+        <li class="list-inline-item">ระบบการยืนยันตัวตน (KYC)</li>
+      </ul>
+    </footer>
+  </div>
+
+
+
+
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/js/bootstrap.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js'></script>
+  <script src="datepicker-full.js"></script>
+</body>
+
+</html>
