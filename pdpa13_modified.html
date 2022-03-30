@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.84.0">
+  <title>Data Subject Request sysytem</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100;300;600&display=swap" rel="stylesheet">
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="assets/dist/css/custom.css">
+  <link href="form-validation.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker-bs4.min.css">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css'>
+
+<body class="bg-light">
+  <div class="container">
+    <main>
+      <div class="row py-5 text-center">
+        <div class="col-4"></div>
+        <div class="col-4">
+          <h4>การยืนยันตัวตน
+        </div>
+        <div class="col-4"></div>
+      </div>
+<br><br>
+      <!-- progressbar 
+      <div>
+        <ul id="progressbar">
+          <li>
+            <img src="assets/img/step1.png">
+            <br>เงื่อนไข<br>ข้อตกลง
+          </li>
+          <li>
+            <img src="assets/img/step2.png">
+            <br>ถ่ายรูปบัตร<br>
+            ประชาชน
+          </li>
+          <li> <img src="assets/img/step3.png">
+            <br>กรอกข้อมูล<br>เพิ่มเติม
+          </li>
+          <li> <img src="assets/img/step4.png">
+            <br>ถ่ายรูปใบหน้า
+          </li>
+        </ul>
+      </div>-->
+
+      <div class="row g-5"></div>
+      <div class="col-md-12 col-lg-12">
+        <h5 class="mb-" style="margin-bottom: 20px;">ท่านเป็นเจ้าของข้อมูลส่วนบุคคลที่ต้องการใช้สิทธิตามคำร้องฉบับนี้
+        </h5>
+
+        <form class="needs-validation" novalidate>
+          <div class="my-3">
+            <div class="form-check">
+              <input id="owner" name="ownerMethod" type="radio" class="form-check-input" checked required>
+              <label class="form-check-label" for="owner">ใช่ ข้าพเจ้าเป็นเจ้าของข้อมูลส่วนบุคคลและมีสิทธิตาม พ.ร.บ.
+                คุ้มครองข้อมูลส่วนบุคคลในการยื่นคำร้องขอฉบับนี้</label>
+            </div>
+            <div class="form-check">
+              <input id="owner" name="ownerMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="owner">ไม่ใช่ ข้าพเจ้าดำเนินการในนามของผู้อื่น (ระบุชื่อ
+                และเลขบัตรประจำตัวประชาชนหรือเลขหนังสือเดินทางของเจ้าของข้อมูลส่วนบุคคล
+                พร้อมทั้งระบุเหตุผลในการดำเนินการแทน)</label>
+            </div>
+            <hr class="my-4">
+            <div class="row g-3">
+            <div class="col-6">
+                <label for="address" class="form-label">ชื่อ(ผู้ดำเนินการแทน) *</label>
+                <input type="text" class="form-control" id="address" placeholder="ชื่อ(ผู้ดำเนินการแทน)" required>
+                <div class="invalid-feedback">
+                  Please enter your shipping address.
+                </div>
+              </div>
+
+              <div class="col-6">
+                <label for="address" class="form-label">ชื่อสกุล(ผู้ดำเนินการแทน) *</label>
+                <input type="text" class="form-control" id="address" placeholder="ชื่อสกุล(ผู้ดำเนินการแทน)" required>
+                <div class="invalid-feedback">
+                  Please enter your shipping address.
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="address" class="form-label">เลขบัตรประจำตัวประชน / เลขหนังสือเดินทาง(ผู้ดำเนินการแทน)
+                  *</label>
+                <input type="text" class="form-control" id="address"
+                  placeholder="เลขบัตรประจำตัวประชน / เลขหนังสือเดินทาง(ผู้ดำเนินการแทน)" required>
+                <div class="invalid-feedback">
+                  Please enter your shipping address.
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="address" class="form-label">เหตุผลในการดำเนินการแทน *</label>
+                <!--<input type="text" class="form-control" id="address" style="height: 85px; padding-bottom: 50px;"
+                  maxlength="100q" placeholder="เหตุผลในการดำเนินการแทน *" required>-->
+                  
+                    <textarea class="form-control" id="detail" rows="5" maxlength="500" placeholder="เหตุผลในการดำเนินการแทน *" required></textarea>
+                 
+                <div class="invalid-feedback">
+                  Please enter your shipping address.
+                </div>
+              </div>
+            <hr class="my-4">
+            <h5 class="mb-" style="margin-bottom: 20px;">สถานะเจ้าของข้อมูล</h5>
+            <div class="my-3">
+              <div class="form-check">
+                <input id="status" name="statusMethod" type="radio" class="form-check-input" checked required>
+                <label class="form-check-label" for="status">ผู้เอาประกัน</label>
+              </div>
+              <div class="form-check">
+                <input id="status" name="statusMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="status">ผู้รับผลประโยชน์</label>
+              </div>
+              <div class="form-check">
+                <input id="status" name="statusMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="status">ทายาท</label>
+              </div>
+              <div class="form-check">
+                <input id="status" name="statusMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="status"> อื่น</label>
+              </div>
+            </div>
+            <hr class="my-4">
+           
+
+              <h5 class="mb-" style="margin-bottom: 20px;">เจ้าของข้อมูลส่วนบุคคลมีสถานะหรือความสัมพันธ์อย่างไรกับบริษัท
+              </h5>
+              <div class="my-3">
+                <div class="form-check">
+                  <input id="relation" name="relationMethod" type="radio" class="form-check-input" checked required>
+                  <label class="form-check-label" for="relation">ผู้สมัครงาน</label>
+                </div>
+                <div class="form-check">
+                  <input id="relationt" name="relationMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="relation">พนักงาน</label>
+                </div>
+                <div class="form-check">
+                  <input id="relationt" name="relationMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="relation">อดีตพนักงาน</label>
+                </div>
+                <div class="form-check">
+                  <input id="relationt" name="relationMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="relation">ผู้เอาประกันภัย</label>
+                </div>
+                <div class="form-check">
+                  <input id="relationt" name="relationMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="relation"> ผู้รับประโยชน์</label>
+                </div>
+                <div class="form-check">
+                  <input id="relationt" name="relationMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="relation">คู่ค้า</label>
+                </div>
+                <div class="form-check">
+                  <input id="relationt" name="relationMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="relation">พนักงานของบริษัทคู่ค้า</label>
+                </div>
+                <div class="form-check">
+                  <input id="relationt" name="relationMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="relationt">อื่นๆ</label>
+                </div>
+              </div>
+              <hr class="my-4">
+              <h5 class="mb-" style="margin-bottom: 20px;">ผู้ร้องขอต้องการใช้สิทธิของเจ้าของข้อมูลส่วนบุคคลในเรื่องใด</h5>
+              <div class="my-3">
+                <div class="form-check">
+                  <input id="right" name="rightMethod" type="radio" class="form-check-input" checked required>
+                  <label class="form-check-label" for="right">สิทธิในการเข้าถึงข้อมูลส่วนบุคคล</label>
+                </div>
+                <div class="form-check">
+                  <input id="right" name="rightMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="right">สิทธิในการขอรับข้อมูลส่วนบุคคล</label>
+                </div>
+                <div class="form-check">
+                  <input id="right" name="rightMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="right">สิทธิในการขอแก้ไข/เพิ่มเติม ข้อมูล</label>
+                </div>
+                <div class="form-check">
+                  <input id="right" name="rightMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="right">สิทธิในการขอเพิกถอนความยินยอม</label>
+                </div>
+                <div class="form-check">
+                  <input id="right" name="rightMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="right">สิทธิในการขอลบข้อมูลขอลบข้อมูล</label>
+                </div>
+                <div class="form-check">
+                  <input id="right" name="rightMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="right">สิทธิในการระงับการใช้ข้อมูลส่วนบุคคล</label>
+                </div>
+                <div class="form-check">
+                  <input id="right" name="rightMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="right">สิทธิในการคัดค้านการประมวลผลข้อมูลส่วนบุคคล</label>
+                </div>
+                <div class="form-check">
+                  <input id="right" name="rightMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="right">สิทธิในการโอนข้อมูล</label>
+                </div>
+              </div>
+              <hr class="my-4">
+              <h5 class="mb-" style="margin-bottom: 20px;">ประเภทข้อมูล</h5>
+              <div class="my-3">
+                <div class="form-check">
+                  <input id="type" name="typeMethod" type="radio" class="form-check-input" checked required>
+                  <label class="form-check-label" for="type">ข้อมูลตามกรมธรรม์ประกันภัย</label>
+                </div>
+                <div class="form-check">
+                  <input id=type" name="typeMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="type">ข้อมูลเกี่ยวกับการเรียกร้องค่าสินไหมทดแทน</label>
+                </div>
+                <div class="form-check">
+                  <input id="type" name="typeMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="type">ข้อมูลตามสัญญาจ้างแรงงาน</label>
+                </div>
+                </div>
+                <hr class="my-4">
+
+
+                <h5 class="mb-" style="margin-bottom: 20px;">ประเภทกรมธรรม์</h5>
+                <div class="my-3">
+                  <div class="form-check">
+                    <input id="insurance" name="insuranceMethod" type="radio" class="form-check-input" checked required>
+                    <label class="form-check-label" for="insurance">กรมธรรม์ประกันภัยรถยนต์</label>
+                  </div>
+                  <div class="form-check">
+                    <input id="insurance" name="insuranceMethod" type="radio" class="form-check-input" required>
+                    <label class="form-check-label" for="insurance">กรมธรรม์ประกันภัยอุบัติเหตุ / สุขภาพ</label>
+                  </div>
+                  <div class="form-check">
+                    <input id="insurance" name="insuranceMethod" type="radio" class="form-check-input" required>
+                    <label class="form-check-label" for="insurance">กรมธรรม์ประกันภัยอื่น ๆ</label>
+                  </div>
+</div>
+                  <hr class="my-4">
+
+
+
+                  <h5 class="mb-" style="margin-bottom: 20px;">รูปแบบการรับทราบข้อมูล</h5>
+                  <div class="my-3">
+                    <div class="form-check">
+                      <input id="channel" name="channelMethod" type="radio" class="form-check-input" checked required>
+                      <label class="form-check-label" for="channel">กระดาษ</label>
+                    </div>
+                    <div class="form-check">
+                      <input id="channel" name="channelMethod" type="radio" class="form-check-input" required>
+                      <label class="form-check-label" for="channel">อีเมล์</label>
+                    </div>
+                    <div class="form-check">
+                      <input id="channel" name="channelMethod" type="radio" class="form-check-input" required>
+                      <label class="form-check-label" for="channel">โทรศัพท์</label>
+                    </div>
+                    <hr class="my-4">
+                    <div class="col-12">
+                      <label for="detail" class="form-label">รายละเอียดที่ต้องการให้ดำเนินการ</label>
+                      <!--<input type="text" class="form-control" id="address" style="height: 85px; padding-bottom: 50px;"
+                        maxlength="500q" placeholder="รายละเอียดที่ต้องการให้ดำเนินการ" required>-->
+                            <textarea class="form-control" id="detail" rows="5" maxlength="500" placeholder="รายละเอียดที่ต้องการให้ดำเนินการ"></textarea>
+                      <div class="invalid-feedback">
+                        กรุณากรอกรายละเอียดที่ต้องการให้ดำเนินการ
+                      </div>
+                    </div>
+                    </div>
+                    <hr class="my-4">
+                    <button class="w-100 btn btn-primary btn-lg" type="submit">ยืนยันและดำเนินการต่อ</button>
+        </form>
+      </div>
+    </main>
+    <footer class="my-2 pt-3 text-muted text-center text-small">
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#"><img src="assets/img/mti.png"></a></li>
+        <li class="list-inline-item">I</li>
+        <li class="list-inline-item">ระบบการยืนยันตัวตน (KYC)</li>
+      </ul>
+    </footer>
+  </div>
+
+
+
+
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/js/bootstrap.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js'></script>
+  <script src="datepicker-full.js"></script>
+</body>
+
+</html>
